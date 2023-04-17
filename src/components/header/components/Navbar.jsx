@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { Link } from "react-router-dom";
 
 import { AppBar, Box, Button, Toolbar } from "@mui/material";
 import styled from "@emotion/styled";
@@ -10,7 +11,6 @@ import SideMenu from "./SideMenu";
 import NavigationLinks from "./NavigationLinks";
 
 import logo from "../../../assets/logo.svg";
-import { Link } from "react-router-dom";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -60,9 +60,15 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position="sticky" sx={{ height: "64px" }}>
+      <AppBar
+        position="sticky"
+        sx={{
+          height: "64px",
+          backgroundColor: "primary.main",
+        }}
+      >
         <StyledToolbar>
-          <Button disableRipple LinkComponent={Link} to="/" sx={{ padding: 0 }}>
+          <Button disableRipple LinkComponent="a" href="#" sx={{ padding: 0 }}>
             <img src={logo} width={40} height={40} alt="logo" />
           </Button>
           <NavigationLinks />
