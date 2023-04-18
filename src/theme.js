@@ -47,8 +47,8 @@ export const theme = createTheme({
     },
     tab: {
       color: "#050505",
-      fontWeight: 700,
-      textTransform: "none",
+      fontWeight: 500,
+      textTransform: "uppercase",
     },
   },
 });

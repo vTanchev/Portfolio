@@ -127,16 +127,18 @@ const StyledDiv = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     padding: 0,
     height: "540px",
-
     maxWidth: "initial",
   },
   // large
   [theme.breakpoints.up("lg")]: {
-    height: "560px",
+    padding: "50px",
+    height: "510px",
     maxWidth: "initial",
   },
   [theme.breakpoints.up("xl")]: {
-    height: "650px",
+    padding: "86px",
+    height: "600px",
+    width: "600px",
     maxWidth: "initial",
   },
 }));
