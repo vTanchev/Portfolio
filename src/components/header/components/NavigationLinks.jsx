@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { useLocation } from "react-router-dom";
 
-// import NavLinksData from "../../../data/NavLinksData";
+import { NavLinksData } from "../../../data/NavLinksData";
 
 import { Tab, Tabs } from "@mui/material";
 import styled from "@emotion/styled";
@@ -12,30 +12,6 @@ const StyledTab = styled(Tab)(({ theme }) => ({
   // hover efekt
   "&:hover": {},
 }));
-
-const NavLinksData = [
-  {
-    label: "Home",
-    pathname: "#",
-    value: 0,
-  },
-  {
-    label: "About",
-    pathname: "#about",
-    value: 1,
-  },
-
-  {
-    label: "Projects",
-    pathname: "#projects",
-    value: 2,
-  },
-  {
-    label: "Contact",
-    pathname: "#contact",
-    value: 3,
-  },
-];
 
 const NavigationLinks = () => {
   const [value, setValue] = useState(0);

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 
 import { BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
@@ -30,7 +30,7 @@ const Footer = () => {
     <>
       <StyledContainer>
         <Typography variant="body2" fontSize={16}>
-          Copyright © Vasko Tanchev 2023
+          © Vasko Tanchev 2023
         </Typography>
         <StyledBox>
           <Button

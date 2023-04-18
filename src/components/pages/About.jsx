@@ -1,62 +1,74 @@
 import React from "react";
 
+import styled from "@emotion/styled";
+
 import resume from "../../files/CV.pdf";
 
 import { Button, Container, Typography } from "@mui/material";
+import Skills from "../about/Skills";
+
+const StyledButtonSubmit = styled(Button)(({ theme }) => ({
+  "&:hover": {
+    backgroundColor: theme.palette.primary.main,
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "50%",
+  },
+}));
 
 const About = () => {
   return (
     <React.Fragment>
       <Container>
-        <Typography variant="h5" paddingTop="50px" id="about">
+        <Typography variant="h5" paddingTop="60px" id="about">
           About
         </Typography>
         <Typography variant="body1">
-          Hello, I’m Vasko, a junior React.js developer with a strong passion
-          for building web applications that are both user-friendly and
-          efficient.
+          I’m Vasko Tanchev, a Frontend Developer with expertise in React.js and
+          Node.js as my back-end. I love building user-friendly and efficient
+          web applications, and I am constantly expanding my skills through
+          various projects.
         </Typography>
         <Typography variant="body1">
-          I'm an enthusiast about technology, especially React.js. As a junior
-          developer, I have a solid foundation in HTML, CSS, JavaScript, and
-          React. I am likewise familiar with Node.js. I keep expanding my skills
-          and knowledge through the many projects I have built.
+          My forte is creating dynamic user interfaces with reusable components.
+          I always strive to refine my code and streamline my workflow to
+          improve efficiency. My experience with Node.js as a backend technology
+          has made me capable of delivering exceptional results as a junior
+          React.js developer.
         </Typography>
         <Typography variant="body1">
-          What I enjoy most when working with React is its ability to create
-          dynamic user interfaces with reusable components. I strive to refine
-          my code and streamline my workflow.
+          I am a quick learner who always seeks help when necessary. In a
+          fast-paced industry like web development, I recognize the importance
+          of being flexible, and I’m always adapting to change. I also enjoy
+          collaborating with people from diverse backgrounds and cultures, as I
+          believe it leads to better ideas and more innovation.
         </Typography>
         <Typography variant="body1">
-          Being a quick learner, asking questions, and seeking help when
-          necessary are integral parts of my problem-solving approach. I am
-          accustomed to adapting to change and recognize how important is to be
-          flexible in a dynamic and fast-paced industry, such as web
-          development.
-        </Typography>
-        <Typography variant="body1">
-          I enjoy working with people from different backgrounds and cultures,
-          and I believe that a diverse team leads to better ideas and more
-          innovation.
-        </Typography>
-        <Typography variant="body1">
-          Are you’re looking for a junior React.js developer who is
+          If you’re searching for a junior React.js developer who is
           enthusiastic, hard-working, and committed to delivering exceptional
-          results? let’s connect and discuss how I can contribute to your team.
+          results, I would love to connect with you and discuss how I can
+          contribute to your team.
         </Typography>
-        <>
-          <Typography variant="h6">Skills</Typography>
-        </>
-
-        <Button
+        <StyledButtonSubmit
           variant="contained"
           LinkComponent={"a"}
           href={resume}
           download="Resume"
+          disableElevation
           sx={{ padding: "6px 30px", textTransform: "uppercase" }}
         >
           Resume
-        </Button>
+        </StyledButtonSubmit>
+
+        <>
+          <Typography variant="h6" fontSize={20} marginTop="10px">
+            Tools & Technologies
+          </Typography>
+          {/* skill item */}
+          <>
+            <Skills />
+          </>
+        </>
       </Container>
     </React.Fragment>
   );

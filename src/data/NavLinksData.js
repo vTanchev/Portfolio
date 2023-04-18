@@ -1,27 +1,32 @@
+import HomeIcon from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import ComputerIcon from "@mui/icons-material/Computer";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
+
 export const NavLinksData = [
   {
     label: "Home",
-    pathname: "/",
+    pathname: "#",
     value: 0,
+    icon: <HomeIcon />,
   },
   {
     label: "About",
-    pathname: "/about",
+    pathname: "#about",
     value: 1,
+    icon: <InfoIcon />,
   },
-  {
-    label: "Skills",
-    pathname: "/skills",
-    value: 2,
-  },
+
   {
     label: "Projects",
-    pathname: "/projects",
+    pathname: "#projects",
     value: 3,
+    icon: <ComputerIcon />,
   },
   {
     label: "Contact",
-    pathname: "/contact",
+    pathname: "#contact",
     value: 4,
+    icon: <ContactMailIcon />,
   },
 ];

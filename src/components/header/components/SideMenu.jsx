@@ -1,5 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+import { NavLinksData } from "../../../data/NavLinksData";
 
 import {
   List,
@@ -10,10 +11,6 @@ import {
 } from "@mui/material";
 
 import styled from "@emotion/styled";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import ComputerIcon from "@mui/icons-material/Computer";
-import ContactMailIcon from "@mui/icons-material/ContactMail";
 
 const heightMenu = 64;
 
@@ -50,35 +47,16 @@ const SideMenu = ({ isOpenMenu, setIsOpenMenu }) => {
         onOpen={handlerOpenMenu}
       >
         <List component="nav">
-          <ListItemButton LinkComponent="a" href="#" onClick={closeMenu}>
-            <ListItemIcon>
-              <HomeIcon />
-            </ListItemIcon>
-            <ListItemText>HOME</ListItemText>
-          </ListItemButton>
-          <ListItemButton LinkComponent="a" href="#about" onClick={closeMenu}>
-            <ListItemIcon>
-              <InfoIcon />
-            </ListItemIcon>
-            <ListItemText>ABOUT</ListItemText>
-          </ListItemButton>
-
-          <ListItemButton
-            LinkComponent="a"
-            href="#projects"
-            onClick={closeMenu}
-          >
-            <ListItemIcon>
-              <ComputerIcon />
-            </ListItemIcon>
-            <ListItemText>PROJECTS</ListItemText>
-          </ListItemButton>
-          <ListItemButton LinkComponent="a" href="#contact" onClick={closeMenu}>
-            <ListItemIcon>
-              <ContactMailIcon />
-            </ListItemIcon>
-            <ListItemText>CONTACT</ListItemText>
-          </ListItemButton>
+          {NavLinksData.map((navLink) => (
+            <ListItemButton
+              LinkComponent="a"
+              href={navLink.pathname}
+              onClick={closeMenu}
+            >
+              <ListItemIcon>{navLink.icon}</ListItemIcon>
+              <ListItemText>{navLink.label}</ListItemText>
+            </ListItemButton>
+          ))}
         </List>
       </DrawerStyled>
     </>
