@@ -30,7 +30,7 @@ const Footer = () => {
     <>
       <StyledContainer>
         <Typography variant="body2" fontSize={16}>
-          © Vasko Tanchev 2023
+          Copyright © Vasko Tanchev 2023
         </Typography>
         <StyledBox>
           <Button
