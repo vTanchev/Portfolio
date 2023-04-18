@@ -1,5 +1,8 @@
-import { Container, Typography } from "@mui/material";
 import React from "react";
+
+import Form from "../contact/Form";
+
+import { Container, Typography } from "@mui/material";
 
 const Contact = () => {
   return (
@@ -10,6 +13,7 @@ const Contact = () => {
           Feel free to Contact me by submitting the form below and I will get
           back to you as soon as possible
         </Typography>
+        <Form />
       </Container>
     </React.Fragment>
   );
