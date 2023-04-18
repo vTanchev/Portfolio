@@ -136,9 +136,9 @@ const StyledDiv = styled("div")(({ theme }) => ({
     maxWidth: "initial",
   },
   [theme.breakpoints.up("xl")]: {
-    padding: "86px",
-    height: "600px",
-    width: "600px",
+    padding: "10px",
+    height: "580px",
+    width: "580px",
     maxWidth: "initial",
   },
 }));

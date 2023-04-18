@@ -7,6 +7,7 @@ import About from "./components/pages/About";
 
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
 
       {/* za ruti */}
       {/* <BrowserRouter>

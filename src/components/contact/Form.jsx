@@ -16,7 +16,7 @@ const Form = () => {
   return (
     <Card style={{ padding: "20px 5px" }}>
       <CardContent>
-        <form onSubmit="submit">
+        <form>
           <Grid container spacing={1}>
             <Grid xs={12} sm={6} item>
               <TextField
@@ -57,7 +57,7 @@ const Form = () => {
                 required
               />
             </Grid>
-            <Grid xs={12} item>
+            <Grid xs={12} sm={3} item>
               <StyledButtonSubmit
                 type="submit"
                 variant="contained"

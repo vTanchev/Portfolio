@@ -1,12 +1,14 @@
 import React from "react";
 
-import { Container, Typography } from "@mui/material";
+import resume from "../../files/CV.pdf";
+
+import { Button, Container, Typography } from "@mui/material";
 
 const About = () => {
   return (
     <React.Fragment>
-      <Container id="about">
-        <Typography variant="h5" paddingTop="50px">
+      <Container>
+        <Typography variant="h5" paddingTop="50px" id="about">
           About
         </Typography>
         <Typography variant="body1">
@@ -42,6 +44,19 @@ const About = () => {
           enthusiastic, hard-working, and committed to delivering exceptional
           results? let’s connect and discuss how I can contribute to your team.
         </Typography>
+        <>
+          <Typography variant="h6">Skills</Typography>
+        </>
+
+        <Button
+          variant="contained"
+          LinkComponent={"a"}
+          href={resume}
+          download="Resume"
+          sx={{ padding: "6px 30px", textTransform: "uppercase" }}
+        >
+          Resume
+        </Button>
       </Container>
     </React.Fragment>
   );
