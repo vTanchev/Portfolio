@@ -5,7 +5,11 @@ import styled from "@emotion/styled";
 
 import { BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
 
-const StyledBox = styled("div")(({ theme }) => ({}));
+const StyledBox = styled("div")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    paddingBottom: "10px ",
+  },
+}));
 
 const StyledContainer = styled(Container)(({ theme }) => ({
   display: "flex",
@@ -14,6 +18,11 @@ const StyledContainer = styled(Container)(({ theme }) => ({
   alignItems: "center",
   height: "60px",
   marginTop: "20px",
+
+  [theme.breakpoints.down("md")]: {
+    display: "flex",
+    flexDirection: "column-reverse",
+  },
 }));
 
 const Footer = () => {
