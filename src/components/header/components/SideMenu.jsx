@@ -13,7 +13,6 @@ import styled from "@emotion/styled";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import ComputerIcon from "@mui/icons-material/Computer";
-import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 
 const heightMenu = 64;
@@ -63,12 +62,7 @@ const SideMenu = ({ isOpenMenu, setIsOpenMenu }) => {
             </ListItemIcon>
             <ListItemText>ABOUT</ListItemText>
           </ListItemButton>
-          <ListItemButton LinkComponent="a" href="#skills" onClick={closeMenu}>
-            <ListItemIcon>
-              <HelpCenterIcon />
-            </ListItemIcon>
-            <ListItemText>SKILLS</ListItemText>
-          </ListItemButton>
+
           <ListItemButton
             LinkComponent="a"
             href="#projects"

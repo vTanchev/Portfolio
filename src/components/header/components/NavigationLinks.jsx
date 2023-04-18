@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import { useLocation } from "react-router-dom";
 
 // import NavLinksData from "../../../data/NavLinksData";
@@ -24,20 +24,16 @@ const NavLinksData = [
     pathname: "#about",
     value: 1,
   },
-  {
-    label: "Skills",
-    pathname: "#skills",
-    value: 2,
-  },
+
   {
     label: "Projects",
     pathname: "#projects",
-    value: 3,
+    value: 2,
   },
   {
     label: "Contact",
     pathname: "#contact",
-    value: 4,
+    value: 3,
   },
 ];
 
