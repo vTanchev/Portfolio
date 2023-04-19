@@ -3,51 +3,55 @@ import { FaCss3Alt, FaSass, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import { BsBootstrap } from "react-icons/bs";
 
 import { SiMui, SiTailwindcss } from "react-icons/si";
-import { DiJavascript1 } from "react-icons/di";
+import { DiJavascript1, DiMongodb } from "react-icons/di";
 
 export const skillsData = [
   {
     skill: "GIT",
-    icon: <AiOutlineGithub />,
+    icon: <AiOutlineGithub size={24} />,
   },
   {
     skill: "HTML",
-    icon: <AiOutlineHtml5 />,
+    icon: <AiOutlineHtml5 size={24} />,
   },
   {
     skill: "CSS",
-    icon: <FaCss3Alt />,
+    icon: <FaCss3Alt size={24} />,
   },
   {
     skill: "Sass",
-    icon: <FaSass />,
+    icon: <FaSass size={24} />,
   },
   {
     skill: "Bootstrap",
-    icon: <BsBootstrap />,
+    icon: <BsBootstrap size={24} />,
   },
   {
     skill: "Tailwind CSS",
-    icon: <SiTailwindcss />,
+    icon: <SiTailwindcss size={24} />,
   },
   {
     skill: "Material UI",
-    icon: <SiMui />,
+    icon: <SiMui size={24} />,
   },
   {
     skill: "JavaScript",
-    icon: <DiJavascript1 />,
+    icon: <DiJavascript1 size={24} />,
   },
   {
     skill: "React",
-    icon: <FaReact />,
+    icon: <FaReact size={24} />,
   },
   {
     skill: "Node.js",
-    icon: <FaNodeJs />,
+    icon: <FaNodeJs size={24} />,
+  },
+  {
+    skill: "MongoDB",
+    icon: <DiMongodb size={24} />,
   },
   {
     skill: "Python",
-    icon: <FaPython />,
+    icon: <FaPython size={24} />,
   },
 ];

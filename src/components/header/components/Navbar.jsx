@@ -61,7 +61,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar
-        position="sticky"
+        position="fixed"
         sx={{
           height: "64px",
           backgroundColor: "primary.main",

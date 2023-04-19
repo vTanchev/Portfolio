@@ -64,7 +64,7 @@ const About = () => {
           <Typography variant="h6" fontSize={20} marginTop="10px">
             Tools & Technologies
           </Typography>
-          {/* skill item */}
+
           <>
             <Skills />
           </>
