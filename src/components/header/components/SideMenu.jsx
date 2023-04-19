@@ -47,8 +47,9 @@ const SideMenu = ({ isOpenMenu, setIsOpenMenu }) => {
         onOpen={handlerOpenMenu}
       >
         <List component="nav">
-          {NavLinksData.map((navLink) => (
+          {NavLinksData.map((navLink, i) => (
             <ListItemButton
+              key={i}
               LinkComponent="a"
               href={navLink.pathname}
               onClick={closeMenu}

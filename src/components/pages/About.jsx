@@ -1,11 +1,12 @@
 import React from "react";
 
-import styled from "@emotion/styled";
-
+import Skills from "../about/Skills";
 import resume from "../../files/CV.pdf";
 
 import { Button, Container, Typography } from "@mui/material";
-import Skills from "../about/Skills";
+import styled from "@emotion/styled";
+
+const StyledDiv = styled("div")({});
 
 const StyledButtonSubmit = styled(Button)(({ theme }) => ({
   "&:hover": {
@@ -18,9 +19,9 @@ const StyledButtonSubmit = styled(Button)(({ theme }) => ({
 
 const About = () => {
   return (
-    <React.Fragment>
+    <StyledDiv id="about">
       <Container>
-        <Typography variant="h5" paddingTop="60px" id="about">
+        <Typography variant="h5" paddingTop="60px">
           About
         </Typography>
         <Typography variant="body1">
@@ -70,7 +71,7 @@ const About = () => {
           </>
         </>
       </Container>
-    </React.Fragment>
+    </StyledDiv>
   );
 };
 

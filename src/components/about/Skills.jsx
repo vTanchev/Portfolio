@@ -28,8 +28,9 @@ const StyledToolDiv = styled("div")(({ theme }) => ({
 const Skills = () => {
   return (
     <StyledToolDiv>
-      {skillsData.map((item) => (
+      {skillsData.map((item, i) => (
         <Button
+          key={i}
           disableElevation
           disableRipple
           variant="outlined"
