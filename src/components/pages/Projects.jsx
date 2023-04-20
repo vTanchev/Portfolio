@@ -14,41 +14,53 @@ import {
 } from "@mui/material";
 import styled from "@emotion/styled";
 
-const StyledDiv = styled("div")({});
+const StyledDiv = styled("div")(({ theme }) => ({}));
+const StyledLink = styled(Button)(({ theme }) => ({
+  padding: "0",
+}));
 
 const Projects = () => {
   return (
     <StyledDiv id="projects">
       <Container>
-        <Typography variant="h5" paddingTop="40px">
+        <Typography variant="h5" paddingTop="50px">
           Projects
         </Typography>
-        <Grid container spacing={1}>
-          {projectsData.map((card) => (
-            <Grid xs={12} sm={6} item>
+        <Grid container spacing={3}>
+          {projectsData.map((project) => (
+            <Grid xs={12} sm={4} item key={project.title}>
               <Card sx={{ maxWidth: 445 }}>
-                <CardMedia
-                  component="img"
-                  alt={card.title}
-                  height="140"
-                  image={card.screenshot}
-                />
+                <StyledLink LinkComponent={"a"} href={project.linkDemo}>
+                  <CardMedia
+                    component="img"
+                    alt={project.title}
+                    height="260"
+                    image={project.screenshot}
+                  />
+                </StyledLink>
                 <CardContent>
-                  <Typography gutterBottom variant="body1" component="div">
-                    {card.title}
+                  <Typography gutterBottom variant="cardTitle" component="div">
+                    {project.title}
                   </Typography>
                   <Typography variant="body2" color="secondary.main">
-                    {card.tools}
+                    Built with:{" "}
+                    {project.tools.map((tool) => tool.replaceAll(",", " "))}
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button LinkComponent={"a"} href={card.linkDemo} size="small">
+                  <Button
+                    LinkComponent={"a"}
+                    href={project.linkDemo}
+                    size="medium"
+                    variant="outlined"
+                  >
                     Live Demo
                   </Button>
                   <Button
                     LinkComponent={"a"}
-                    href={card.githubLink}
-                    size="small"
+                    href={project.githubLink}
+                    size="medium"
+                    variant="outlined"
                   >
                     Github Code
                   </Button>

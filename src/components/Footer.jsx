@@ -38,21 +38,21 @@ const Footer = () => {
             href="https://www.linkedin.com/in/vasko-tanchev/"
             target="_blank"
           >
-            <BsLinkedin size={24} />
+            <BsLinkedin size={24} color="#0A66CA" />
           </Button>
           <Button
             LinkComponent={"a"}
             href="https://github.com/vTanchev"
             target="_blank"
           >
-            <BsGithub size={24} />
+            <BsGithub size={24} color="#000" />
           </Button>
           <Button
             LinkComponent={"a"}
             href="https://twitter.com/xin0w"
             target="_blank"
           >
-            <BsTwitter size={24} />
+            <BsTwitter size={24} color="#1D9BF9" />
           </Button>
         </StyledBox>
       </StyledContainer>

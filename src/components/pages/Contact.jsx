@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <StyledDiv id="contact">
       <Container>
-        <Typography variant="h5" paddingTop="40px">
+        <Typography variant="h5" paddingTop="50px">
           Contact
         </Typography>
         <Typography variant="body1">

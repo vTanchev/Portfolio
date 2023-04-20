@@ -40,19 +40,27 @@ const StyledBox = styled(Box)(({ theme }) => ({
   alignSelf: "center",
   // Galaxy Fond
   [theme.breakpoints.up("se")]: {
-    paddingTop: "50px",
+    paddingTop: "130px",
   },
   // iphone12  390px
   [theme.breakpoints.up("xr")]: {
-    paddingTop: "50px",
+    paddingTop: "190px",
   },
   // samsung S8  360px
   [theme.breakpoints.only("s8")]: {
-    paddingTop: "30px",
+    paddingTop: "130px",
+  },
+  // iphones  390px
+  [theme.breakpoints.only("ip")]: {
+    paddingTop: "130px",
   },
   // samsung S20  412px
   [theme.breakpoints.up("sa")]: {
-    paddingTop: "64px",
+    paddingTop: "130px",
+  },
+  // samsung S20  414px
+  [theme.breakpoints.up("xr1")]: {
+    paddingTop: "130px",
   },
   [theme.breakpoints.up("md")]: {
     paddingTop: "10px",
@@ -83,37 +91,34 @@ const StyledDiv = styled("div")(({ theme }) => ({
   width: "500px",
   // Galaxy Fond
   [theme.breakpoints.up("se")]: {
-    paddingTop: "40px",
+    paddingTop: "10px",
     height: "220px",
     maxWidth: "260px",
   },
   // iphone12  390px
   [theme.breakpoints.up("xr")]: {
-    paddingTop: "50px",
+    paddingTop: "10px",
     height: "350px",
     maxWidth: "350px",
   },
   // samsung S8  360px
   [theme.breakpoints.only("s8")]: {
-    paddingTop: "10px",
     height: "326px",
     maxWidth: "320px",
   },
   // iphones  390px
   [theme.breakpoints.only("ip")]: {
-    paddingTop: "30px",
     height: "370px",
     maxWidth: "370px",
   },
   // samsung S20  412px
   [theme.breakpoints.up("sa")]: {
-    paddingTop: "44px",
+    paddingTop: "14px",
     height: "390px",
     maxWidth: "390px",
   },
   // samsung S20  414px
   [theme.breakpoints.up("xr1")]: {
-    paddingTop: "40px",
     height: "380px",
     maxWidth: "380px",
   },

@@ -21,7 +21,7 @@ const About = () => {
   return (
     <StyledDiv id="about">
       <Container>
-        <Typography variant="h5" paddingTop="60px">
+        <Typography variant="h5" paddingTop="50px">
           About
         </Typography>
         <Typography variant="body1">

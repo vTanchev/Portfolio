@@ -39,11 +39,14 @@ export const theme = createTheme({
       fontFamily: '"Exo 2", sans-serif',
       fontWeight: "bold",
       fontSize: "42px",
-      textTransform: "uppercase",
       marginBottom: "20px",
     },
     body1: {
       marginBottom: "10px",
+    },
+    cardTitle: {
+      fontSize: "22px",
+      fontWeight: 500,
     },
     tab: {
       color: "#050505",
